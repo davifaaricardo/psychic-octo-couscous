@@ -25,8 +25,10 @@ try:
 except: 
   print('Unknown link or error in `os_gh_repo`')
   exit() 
-del os_gh_repo, OS, get, system
-exec(GET_Request.text) # not used delete
-del GET_Request
-print(f'error in the os local install.py or error in GET_Request');
-exit()
+try:
+  exec(GET_Request.text) 
+except:  
+  print(f'error in the os local install.py or error in GET_Request');
+  exit()
+finally:  
+  del GET_Request,os_gh_repo, OS, get, system
