@@ -8,5 +8,6 @@ match opt:
     print('insert decompiling code')
   case 'c':
     print('insert changing code')
+    
   case _:
     print(f"{colorama.Fore.RED}ERROR{colorama.Fore.RESET} option: {opt} doesn't exist.")
