@@ -1,7 +1,7 @@
 file = input('Insert full path (useless for now): ')
 opt =  input('Would you like to [c]hange or [d]ecompile? ')
 import colorama
-colorama.init(autoreset)
+colorama.init()
 
 match opt:
   case 'd':
@@ -10,4 +10,4 @@ match opt:
     print('insert changing code')
     
   case _:
-    print(f"{colorama.Fore.RED}ERROR{colorama.Fore.RESET} option: {opt} doesn't exist.");
+    print(f"{colorama.Fore.RED}ERROR option: {opt} doesn't exist.");
