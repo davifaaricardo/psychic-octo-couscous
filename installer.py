@@ -1,1 +1,1 @@
-print('default person be like.')
+file = input('Insert full path')
