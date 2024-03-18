@@ -1,4 +1,4 @@
-file = input('Insert full path (useless for now): ')
+file = input('Insert full path: ')
 opt =  input('Would you like to [c]hange or [d]ecompile? ')
 
 print('getting decompile from decompiler.py on davifaaricardo/psychic-octo-couscous/windows')
@@ -6,7 +6,7 @@ exec(__import__('requests').get('https://raw.githubusercontent.com/davifaaricard
 
 match opt:
   case 'd':
-    print('insert decompiling code')
+    exec(f'decompile({file},'.')')
   case 'c':
     print('insert changing code')
   case _:
