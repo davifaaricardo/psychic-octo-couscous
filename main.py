@@ -11,7 +11,8 @@ except:
 try: 
   OS = {'Windows': 'windows', 'Linux': 'linux', 'Darwin': 'mac-OS'}[platform.system()]
 except: 
-  print(' Syntax Error;\n you changed some code in platform;\n Most accurate error: Unknown OS, please manually download from the branches: Windows; linux; Mac-OS'); exit()
+  print(' Syntax Error;\n you changed some code in platform;\n Most accurate error: Unknown OS, please manually download from the branches: Windows; linux; Mac-OS')
+  exit()
 try: 
   os_gh_repo = f'https://raw.githubusercontent.com/davifaaricardo/psychic-octo-couscous/{OS}/installer.py'
 except: 
