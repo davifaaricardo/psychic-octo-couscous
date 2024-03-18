@@ -1,6 +1,6 @@
 print('Please wait, loading library: `platform`')
 import platform
-OSChoice = {'Windows': 'Windows', 'Linux': 'Linux', 'Darwin': 'Mac-OS'}
+OSChoice = {'Windows': 'windows', 'Linux': 'linux', 'Darwin': 'mac-OS'}
 try:
   OS = OSChoice[platform.system()]
 except:
