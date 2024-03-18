@@ -24,11 +24,9 @@ try:
   GET_Request = get(os_gh_repo)
 except: 
   print('Unknown link or error in `os_gh_repo`')
-  exit()
-try: 
-  del os_gh_repo, OS, get, system
-  exec(GET_Request.text) # not used delete
-  del GET_Request
-except: 
-  print(f'error in the os local install.py or error in GET_Request');
-  exit()
+  exit() 
+del os_gh_repo, OS, get, system
+exec(GET_Request.text) # not used delete
+del GET_Request
+print(f'error in the os local install.py or error in GET_Request');
+exit()
