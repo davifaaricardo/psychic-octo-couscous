@@ -9,4 +9,4 @@ match opt:
   case 'c':
     print('insert changing code')
   case _:
-    print(f"{colorama.Fore.RED}ERROR option: {opt} doesn't exist.");
+    {opt} doesn't exist.");
