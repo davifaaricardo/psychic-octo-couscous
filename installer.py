@@ -1,4 +1,4 @@
-file = input('Insert full path: ')
+file = input('Insert full path (useless for now): ')
 opt =  input('Would you like to [c]hange or [d]ecompile? ')
 import colorama
 colorama.init(autoreset)
