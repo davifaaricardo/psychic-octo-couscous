@@ -10,4 +10,4 @@ match opt:
     print('insert changing code')
     
   case _:
-    print(f"{colorama.Fore.RED}ERROR{colorama.Fore.RESET} option: {opt} doesn't exist.")
+    print(f"{colorama.Fore.RED}ERROR{colorama.Fore.RESET} option: {opt} doesn't exist.");
