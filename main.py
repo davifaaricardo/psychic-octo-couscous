@@ -1,30 +1,34 @@
 try: 
-  import platform 
+  from platform import system # not used delete
 except: 
   print('Please install `platform` ')
   exit()
 try: 
-  import requests 
+  from requests import get # not used delete
 except: 
   print('Please install `requests` ')
   exit()
 try: 
-  OS = {'Windows': 'windows', 'Linux': 'linux', 'Darwin': 'mac-OS'}[platform.system()]
+  OS = {'Windows': 'windows', 'Linux': 'linux', 'Darwin': 'mac-OS'}[system()] # not used delete
 except: 
-  print(' Syntax Error;\n you changed some code in platform;\n Most accurate error: Unknown OS, please manually download from the branches: Windows; linux; Mac-OS')
+  print(' Syntax Error; or ')
+  print(' you changed some code in platform; or ')
+  print(' Most accurate error: Unknown OS, please manually download from the branches: Windows; linux; Mac-OS;')
   exit()
 try: 
-  os_gh_repo = f'https://raw.githubusercontent.com/davifaaricardo/psychic-octo-couscous/{OS}/installer.py'
+  os_gh_repo = f'https://raw.githubusercontent.com/davifaaricardo/psychic-octo-couscous/{OS}/installer.py' # not used delete
 except: 
   print('error in OS')
   exit()
 try:
-  GET_Request = requests.get(os_gh_repo)
+  GET_Request = get(os_gh_repo)
 except: 
   print('Unknown link or error in `os_gh_repo`')
   exit()
 try: 
-  exec(GET_Request.text)
+  del os_gh_repo, OS, get, system
+  exec(GET_Request.text) # not used delete
+  del GET_Request
 except: 
-  print(f'error in `{OS}/install.py` or error in GET_Request');
+  print(f'error in the os local install.py or error in GET_Request');
   exit()
